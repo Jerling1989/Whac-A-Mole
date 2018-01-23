@@ -2,7 +2,7 @@
 /*font-family: 'Press Start 2P', cursive;*/
 
 body {
-	background-image: url(../img/white-house.jpg);
+	background-image: url(../img/white-house-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -19,9 +19,9 @@ h1 {
 	width: 800px;
 	height: 600px;
 	margin: auto;
-	border-width: 3px;
+	/*border-width: 3px;
 	border-style: dashed;
-	border-color: yellow;
+	border-color: yellow;*/
 }
 
 #mole {
@@ -30,7 +30,7 @@ h1 {
 	display: none;
 	top: 0px;
 	left: 0px;
-	border-width: 3px;
+	/*border-width: 3px;
 	border-style: solid;
-	border-color: black;
+	border-color: black;*/
 }
