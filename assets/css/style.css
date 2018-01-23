@@ -1,0 +1,16 @@
+/*font-family: 'Shrikhand', cursive;*/
+/*font-family: 'Press Start 2P', cursive;*/
+
+body {
+	background-image: url(../img/white-house.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+h1 {
+	font-family: 'Carter One', cursive;
+	font-size: 60px;
+	color: black;
+	text-align: center;
+}
