@@ -25,8 +25,9 @@ h1 {
 }
 
 #mole {
-	content: url(../img/huckabee-sanders.png);
+	content: url(../img/donald-trump.png);
 	position: relative;
+	display: none;
 	top: 0px;
 	left: 0px;
 	border-width: 3px;
