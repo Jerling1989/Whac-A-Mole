@@ -6,11 +6,13 @@ var reactionTime;
 var moles = ['assets/img/donald-trump.png','assets/img/stephen-miller.png','assets/img/huckabee-sanders.png','assets/img/jared-kushner.png', 'assets/img/kellyanne-conway.png', 'assets/img/don-jr.png'];
 var sounds = ['assets/audio/bigchina.mp3', 'assets/audio/immigration.mp3', 'assets/audio/noconsequence.mp3', 'assets/audio/russia.mp3', 'assets/audio/alternativefacts.mp3', 'assets/audio/nonsensical.mp3']
 
+// confirm('Adjust Computer Volume');
+
 function runGame() {
 
   // setTimeout
   var x = Math.random();
-  x = x * 3000;
+  x = x * 2000;
   x = Math.floor(x);
 
   console.log(x);
