@@ -25,5 +25,11 @@ h1 {
 }
 
 #mole {
-	content: url(../img/stephen-miller.png);
+	content: url(../img/don-jr.png);
+	position: relative;
+	top: 0px;
+	left: 0px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
 }
