@@ -14,3 +14,12 @@ h1 {
 	color: black;
 	text-align: center;
 }
+
+#gaming-box {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	border-width: 3px;
+	border-style: dashed;
+	border-color: yellow;
+}
