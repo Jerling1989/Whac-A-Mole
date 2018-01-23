@@ -1,4 +1,4 @@
-/*font-family: 'Shrikhand', cursive;*/
+
 /*font-family: 'Press Start 2P', cursive;*/
 
 body {
@@ -22,4 +22,8 @@ h1 {
 	border-width: 3px;
 	border-style: dashed;
 	border-color: yellow;
+}
+
+#mole {
+	content: url(../img/donald-trump.png);
 }
