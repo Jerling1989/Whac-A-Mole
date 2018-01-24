@@ -1,21 +1,62 @@
-
+alert('Please Adjust Computer Volume');
 
 var createdTime;
 var clickedTime;
 var reactionTime;
 var moles = ['assets/img/donald-trump.png','assets/img/stephen-miller.png','assets/img/huckabee-sanders.png','assets/img/jared-kushner.png', 'assets/img/kellyanne-conway.png', 'assets/img/don-jr.png'];
-var sounds = ['assets/audio/bigchina.mp3', 'assets/audio/immigration.mp3', 'assets/audio/noconsequence.mp3', 'assets/audio/russia.mp3', 'assets/audio/alternativefacts.mp3', 'assets/audio/nonsensical.mp3']
-
+var sounds = ['assets/audio/bigchina.mp3', 'assets/audio/immigration.mp3', 'assets/audio/noconsequence.mp3', 'assets/audio/russia.mp3', 'assets/audio/alternativefacts.mp3', 'assets/audio/nonsensical.mp3'];
 var carnival = new Audio('assets/audio/circustheme.mp3');
 
-confirm('Please Adjust Computer Volume');
-carnival.play();
+var counter = 60;
+var intervalId;
 
-function runGame() {
+var userPoints = 0;
+
+// Timer Function For The Whole Game (60sec)
+function countdown() {
+  intervalId = setInterval(decrement, 1000);
+  function decrement() {
+  counter--;
+  document.getElementById('timer').innerHTML = counter;
+    if (counter === 0) {
+      clearInterval(intervalId);
+      endScreen(); //make function to restart game
+    }
+  }
+}
+
+function startScreen() {
+  document.getElementById('end-menu').style.display = 'none';
+  document.getElementById('start-menu').style.display = 'block';
+  carnival.play();
+  counter = 60;
+  userPoints = 0;
+}
+
+startScreen();
+
+document.getElementById('start-button').onclick = function() {
+  document.getElementById('start-menu').style.display = 'none';
+  carnival.pause();
+  shortGame();
+  countdown();
+}
+
+function endScreen() {
+  document.getElementById('mole').style.display = 'none';
+  document.getElementById('end-menu').style.display = 'block';
+}
+
+document.getElementById('play-again').onclick = function() {
+  startScreen();
+}
+
+
+function shortGame() {
 
   // setTimeout
   var x = Math.random();
-  x = x * 1800;
+  x = x * 1500;
   x = Math.floor(x);
 
   console.log(x);
@@ -49,21 +90,14 @@ function runGame() {
 
 }
 
-document.getElementById('start-button').onclick = function() {
-  document.getElementById('start-menu').style.display = 'none';
-  carnival.pause();
-  runGame();
-}
-
-// runGame();
 
 document.getElementById('mole').onclick = function() {
 
   clickedTime = Date.now();
   reactionTime = (clickedTime - createdTime) / 1000;
 
-  // document.getElementById('userTime').innerHTML = reactionTime;
+  document.getElementById('currentScore').innerHTML = reactionTime;
 
   this.style.display = 'none';
-  runGame();
+  shortGame();
 }
