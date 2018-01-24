@@ -1,12 +1,9 @@
-
-
-
+/* GENERAL STYLES */
 body {
 	background-image: url(../img/white-house-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-
 
 h1 {
 	font-family: 'Carter One', cursive;
@@ -29,12 +26,14 @@ p {
 	text-align: center;
 }
 
+/* GAMING BOX */
 #gaming-box {
 	width: 800px;
 	height: 600px;
 	margin: auto;
 }
 
+/* START MENU */
 #start-menu {
 	text-align: center;
 	background-color: black;
@@ -68,6 +67,7 @@ p {
 	line-height: 14px;
 }
 
+/* MOLE CREATION */
 #mole {
 	content: url(../img/donald-trump.png);
 	position: relative;
@@ -76,6 +76,7 @@ p {
 	left: 0px;
 }
 
+/* SCORE BOARD */
 .statinfo {
 	background-color: black;
 	text-align: center;
@@ -85,6 +86,7 @@ p {
 	padding: 10px;
 }
 
+/* FINAL DISPLAY */
 #end-menu {
 	text-align: center;
 	background-color: black;
