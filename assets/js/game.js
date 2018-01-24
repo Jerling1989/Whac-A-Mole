@@ -1,18 +1,25 @@
+// ALERT TO TELL USER TO ADJUST DEVICE VOLUME
 alert('Please Adjust Computer Volume');
 
+// VARIABLES FOR TRACKING USER SCORE
 var createdTime;
 var clickedTime;
 var reactionTime;
-var moles = ['assets/img/donald-trump.png','assets/img/stephen-miller.png','assets/img/huckabee-sanders.png','assets/img/jared-kushner.png', 'assets/img/kellyanne-conway.png', 'assets/img/don-jr.png'];
-var sounds = ['assets/audio/bigchina.mp3', 'assets/audio/immigration.mp3', 'assets/audio/noconsequence.mp3', 'assets/audio/russia.mp3', 'assets/audio/alternativefacts.mp3', 'assets/audio/nonsensical.mp3'];
-var carnival = new Audio('assets/audio/circustheme.mp3');
-
-var counter;
-var intervalId;
-
 var userPoints;
 var totalPoints = 0;
 var roundedScore;
+
+// VARIABLES FOR GAME TIMER
+var counter;
+var intervalId;
+
+// VARIABLES FOR MOLE CREATION AND SOUND EFFECTS
+var moles = ['assets/img/donald-trump.png','assets/img/stephen-miller.png','assets/img/huckabee-sanders.png','assets/img/jared-kushner.png', 'assets/img/kellyanne-conway.png', 'assets/img/don-jr.png'];
+var sounds = ['assets/audio/bigchina.mp3', 'assets/audio/immigration.mp3', 'assets/audio/noconsequence.mp3', 'assets/audio/russia.mp3', 'assets/audio/alternativefacts.mp3', 'assets/audio/nonsensical.mp3'];
+var carnival = new Audio('assets/audio/circustheme.mp3');
+var cheering = new Audio('assets/audio/cheering.mp3');
+
+
 
 
 // Timer Function For The Whole Game (60sec)
@@ -51,6 +58,7 @@ document.getElementById('start-button').onclick = function() {
 function endScreen() {
   document.getElementById('mole').style.display = 'none';
   document.getElementById('end-menu').style.display = 'block';
+  cheering.play();
 }
 
 document.getElementById('play-again').onclick = function() {
