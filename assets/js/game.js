@@ -34,7 +34,7 @@ function startScreen() {
   document.getElementById('start-menu').style.display = 'block';
   document.getElementById('currentScore').innerHTML = roundedScore;
   carnival.play();
-  counter = 15;
+  counter = 45;
   totalPoints = 0;
   
 }

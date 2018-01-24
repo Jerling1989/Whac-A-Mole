@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- PAGE TITLE -->
 	<title>White House Whac-A-Mole</title>
 	<!-- FAVICON -->
 	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-
 	<meta charset="utf-8" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <!-- RESPONSIVE VIEWPORT TAG -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- RESET CSS LINK -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<!-- CUTSOM STYLE SHEET -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Carter+One" rel="stylesheet">
 </head>
+
+
 <body>
 	<br />
+	<!-- GAME TITLE -->
 	<h1>WHITE HOUSE<br />WHAC-A-MOLE</h1>
 
+	<!-- GAMING AREA WHERE THE GAME TAKES PLACE (800px X 600px) -->
 	<div id="gaming-box">
 
+		<!-- USER INSTRUCTION DISPLAY AT START OF GAME -->
 		<div id="start-menu">
 			<br />
 			<h3>RULES OF THE GAME:</h3>
@@ -30,12 +37,15 @@
 			<br />
 			<p>Your Score Depends on How Fast Your Reflexes Are!</p>
 			<br />
+			<!-- BUTTON TO START THE GAME -->
 			<button id="start-button">START GAME!</button>
 			<br /><br /><br /><br />
 			<p id="disclaimer">*Disclaimer: Not All Staff Members Guaranteed to Still be Employed or Associated with the Trump White House by the Time You Play This Game.</p>
 		</div>
+		<!-- END INSTRUCTION DISPLAY -->
 
 
+		<!-- THE FINAL DISPLAY AT THE END OF THE GAME -->
 		<div id="end-menu">
 			<br />
 			<h3>GREAT GAME!</h3>
@@ -46,22 +56,31 @@
 			<br />
 			<p>Your Total Score Was: <span id="final-score">1000</span></p>
 			<br />
+			<!-- BUTTON TO START THE GAME AGAIN -->
 			<button id="play-again">PLAY AGAIN!</button>
 		</div>
+		<!-- END FINAL GAME DISPLAY -->
 
-
-		<div id="mole"></div>
+		
+		<!-- MOLE CREATION DIV -->
+		<div id="mole">
+		</div>
+		<!-- END MOLE CREATION DIV -->
 		
 	</div>
+	<!-- END GAMING AREA -->
 
+	<!-- SCORE BOARD -->
+	<h3>
+		<!-- TIMER -->
+		<span class="statinfo">Time Left: <span id="timer">45</span></span>
+		<!-- TOTAL SCORE -->
+		<span class="statinfo">Total Points: <span id="currentScore">0</span></span>
+	</h3>
+	<!-- END SCORE BOARD -->
 	
-		<h3>
-			<span class="statinfo">Time Left: <span id="timer">45</span></span>
-			<span class="statinfo">Total Points: <span id="currentScore">0</span></span>
-		</h3>
-	
 
-
+<!-- GAME JAVASCRIPT -->
 <script type="text/javascript" src="assets/js/game.js"></script>
 </body>
 </html>
