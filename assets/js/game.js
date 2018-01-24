@@ -6,13 +6,16 @@ var reactionTime;
 var moles = ['assets/img/donald-trump.png','assets/img/stephen-miller.png','assets/img/huckabee-sanders.png','assets/img/jared-kushner.png', 'assets/img/kellyanne-conway.png', 'assets/img/don-jr.png'];
 var sounds = ['assets/audio/bigchina.mp3', 'assets/audio/immigration.mp3', 'assets/audio/noconsequence.mp3', 'assets/audio/russia.mp3', 'assets/audio/alternativefacts.mp3', 'assets/audio/nonsensical.mp3']
 
-// confirm('Adjust Computer Volume');
+var carnival = new Audio('assets/audio/circustheme.mp3');
+
+confirm('Please Adjust Computer Volume');
+carnival.play();
 
 function runGame() {
 
   // setTimeout
   var x = Math.random();
-  x = x * 2000;
+  x = x * 1800;
   x = Math.floor(x);
 
   console.log(x);
@@ -46,7 +49,13 @@ function runGame() {
 
 }
 
-runGame();
+document.getElementById('start-button').onclick = function() {
+  document.getElementById('start-menu').style.display = 'none';
+  carnival.pause();
+  runGame();
+}
+
+// runGame();
 
 document.getElementById('mole').onclick = function() {
 
