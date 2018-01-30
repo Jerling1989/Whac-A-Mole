@@ -1,6 +1,8 @@
 # Whac-A-Mole
 Here is a game I made with HTML, CSS, and plain JavaScript. This game was made with the intention of creating a simple game with some humor added to it. It is not a political statement, may someone find themselves offended. The game is "White House Whac-A-Mole" where White House staff members randomly display on the screen and the user scores points by how quickly they click on them.
 
+---
+
 - The first thing the user will see is an alert box I setup to make them aware that the game does have sound effects. This way they can adjust their computer volume accordingly before being bombarded with sound.
 ![ALERT](assets/img/read_me/1-alert.png)
 
