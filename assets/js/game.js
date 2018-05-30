@@ -1,5 +1,5 @@
 // ALERT TO TELL USER TO ADJUST DEVICE VOLUME
-alert('Please Adjust Computer Volume');
+// alert('Please Adjust Computer Volume');
 
 // VARIABLES FOR TRACKING USER SCORE
 var createdTime;
@@ -33,6 +33,27 @@ function countdown() {
   }
 }
 
+
+function soundWarning() {
+  roundedScore = 0;
+  document.getElementById('end-menu').style.display = 'none';
+  document.getElementById('start-menu').style.display = 'none';
+  document.getElementById('sound-warning').style.display = 'block';
+  document.getElementById('currentScore').innerHTML = roundedScore;
+  // carnival.play();
+  counter = 45;
+  totalPoints = 0;
+}
+
+soundWarning();
+
+document.getElementById('sound-button').onclick = function() {
+  document.getElementById('sound-warning').style.display = 'none';
+  carnival.play();
+  startScreen();
+}
+
+
 // USER INSTRUCTION DISPLAY AT START OF GAME
 // RESET USER POINTS AND GAME TIMER
 function startScreen() {
@@ -43,11 +64,10 @@ function startScreen() {
   carnival.play();
   counter = 45;
   totalPoints = 0;
-  
 }
 
 // LAUNCH INSTRUCTION DISPLAY AT PAGE LOAD
-startScreen();
+// startScreen();
 
 // LAUNCHES GAME AND HIDES INSTRUCTION DISPLAY ON BUTTON CLICK
 document.getElementById('start-button').onclick = function() {
