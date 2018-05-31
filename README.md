@@ -3,8 +3,8 @@ Here is a game I made with HTML, CSS, and plain JavaScript. This game was made w
 
 ---
 
-- The first thing the user will see is an alert box I setup to make them aware that the game does have sound effects. This way they can adjust their computer volume accordingly before being bombarded with sound.
-![ALERT](assets/img/read_me/1-alert.png)
+- The first thing the user will see is a sound warning display I setup to make them aware that the game does have sound effects. This way they can adjust their computer volume accordingly without being bombarded with sound.
+![SOUND WARNING](assets/img/read_me/1-sound-warning.png)
 
 - Once the game launches the user will see a black display card with the instructions of the game and a start button.
 ![START](assets/img/read_me/2-start.png)
